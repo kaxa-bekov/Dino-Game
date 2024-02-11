@@ -1,0 +1,145 @@
+.game{
+    width:600px;
+    height: 200px;
+    border-bottom: 3px solid black;
+    margin:auto;
+    position: relative;
+
+}
+
+#counter{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    left:550px;
+    font-family: 'Press Start 2P', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.hi{
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    left: 400px;
+    font-family: 'Press Start 2P', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image:url(img/dino.png);
+    background-size:50px 50px;
+    position: relative;
+    top:150px;
+
+}
+
+#cloud1{
+    width:30px;
+    height:20px;
+    background-image:url(img/cloud.png);
+    background-size:30px 20px;
+    position:relative;
+    top:20px;
+    left:600px;
+    z-index: -1;
+    animation: cloudMove1 4.5s infinite linear;
+}
+
+#cloud2{
+    width:30px;
+    height:20px;
+    background-image:url(img/cloud.png);
+    background-size:30px 20px;
+    position:relative;
+    top:2px;
+    left:630px;
+    z-index: -1;
+    animation: cloudMove2 3s infinite linear;
+}
+
+#cloud3{
+    width:30px;
+    height:20px;
+    background-image:url(img/cloud.png);
+    background-size:30px 20px;
+    position:relative;
+    top:-10px;
+    left:570px;
+    z-index: -1;
+    animation: cloudMove3 4s infinite linear;
+}
+
+@keyframes cloudMove1{
+    0%{
+        left:600px;
+    }
+    100%{
+        left:-50px;
+    }
+}
+@keyframes cloudMove2{
+    0%{
+        left:630px;
+    }
+    100%{
+        left:-80px;
+    }
+}
+@keyframes cloudMove3{
+    0%{
+        left:700px;
+    }
+    100%{
+        left:-20px;
+    }
+}
+
+
+#cactus{
+    width: 20px;
+    height: 25px;
+    background-image: url(img/cactus.png);
+    background-size: 20px 30px;
+    position: relative;
+    top: 126px;
+    left: 580px;
+    animation:cactusMove 2s infinite linear;
+}
+
+@keyframes cactusMove{
+    0%{
+        left:580px
+    }
+    100%{
+        left:-20px
+    }
+}
+
+.jump{
+    animation: jump .4s linear;
+}
+
+@keyframes jump{
+    0%{
+        top:150px;
+    }
+    30%{
+        top:80px
+    }
+    50%{
+        top:110px
+    }
+    80%{
+        top:130px;
+    }
+    100%{
+        top:150px
+    }
+}
